@@ -26,7 +26,7 @@ This project is a responsive web application designed using **HTML**, **CSS**, *
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/username/repository-name.git
+   git clone https://github.com/GhostRider987/Lunacal-Project.git
    
 2. **Open the Project**: 
    - Open the `index.html` file in your browser to view the web application.
@@ -42,10 +42,6 @@ This project is a responsive web application designed using **HTML**, **CSS**, *
 - Adding backend integration for image storage.
 - Implementing a user authentication system.
 - Enhancing the gallery with more image editing features like cropping or resizing.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
