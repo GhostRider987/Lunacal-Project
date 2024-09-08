@@ -1,0 +1,121 @@
+<html></html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <script src="tailwind-config.js" defer></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  </head>
+  <body class="bg-background">
+    <div class="loader" id="loader">
+        <!-- Loading spinner -->
+        <div class="spinner"></div>
+      </div>
+      <div id="content" style="display: none;">
+        <div class="flex justify-end h-screen bg-background">
+            <div class="hidden lg:block lg:w-1/2"></div>
+            <div class="w-full lg:w-1/2 p-8">
+              <div class="card-container">
+              <div class="bg-card relative rounded-lg shadow-lg px-6 py-2 mb-1">
+              
+                <!-- Tab Buttons -->
+                <div class="flex items-center mb-4 mt-4">
+                  <!-- Question Mark Icon -->
+                  <i class="fa-regular fa-circle-question text-gray-700 text-lg mr-2"></i>
+                  
+                  <!-- Tab Buttons Container -->
+                  <div class="tab-buttons-container bg-dark-gray rounded-lg py-4 px-6 w-full">
+                    <div class="flex items-center justify-between">
+                      <!-- Tab Buttons -->
+                      <button class="tab-button active px-2 py-1 mr-4" id="about-me">About Me</button>
+                      <button class="tab-button px-2 py-1 mr-4" id="experiences">Experiences</button>
+                      <button class="tab-button px-2 py-1 mr-4" id="recommended">Recommended</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <i class="fa-solid fa-grip-vertical text-gray-500 text-2xl"></i>
+                
+                  <div class="tab-content">
+                    <p>Hello! I'm Dave, your sales rep here from Salesforce. I've been working at this awesome company for 3 years now.</p>
+                    <p>I was born and raised in Albany, NY & have been living in Santa Carla for the past 10 years with my wife Tiffany and my 4-year-old twin daughters - Emma and Ella. Both of them are just starting school, so my calendar is usually blocked between 9-10 AM. This is a...</p>
+                  </div>
+                </div>
+          </div>
+      
+          <div class="capsule-line"></div>
+          
+          <div class="bg-card rounded-lg shadow-lg px-6 py-1">
+              <div class="flex justify-between mb-0 items-center">
+                <div class="flex items-center space-x-2 py-4">
+                  <i class="fa-regular fa-circle-question text-gray-700 text-lg"></i>
+                  <h2 class="gallery-heading text-white text-lg font-bold bg-black px-6 py-3 rounded-xl shadow-lg">
+                    Gallery
+                  </h2>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <button id="add-image-button" class="add-image-button bg-add-image px-4 py-2 mr-6 rounded-full text-white font-medium flex items-center shadow-[0_-4px_6px_rgba(255,255,255,0.6),8px_6px_10px_rgba(0,0,0,0.6)] hover:bg-add-image-hover transition duration-300">
+                      <!-- Plus Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                      </svg>
+                      Add Image
+                  </button>
+                 <!-- Left Arrow Button -->
+                 <div class="flex items-center space-x-4">
+                  <!-- Left Arrow Button -->
+                  <button id="left-arrow" class="arrow-button w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-gray-600 hover:text-white transition duration-300">
+                      <!-- Left Arrow Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                      </svg>
+                  </button>
+                  <!-- Right Arrow Button -->
+                  <button id="right-arrow" class="arrow-button w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-300 hover:bg-gray-600 hover:text-white transition duration-300">
+                      <!-- Right Arrow Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                  </button>
+              </div>
+            </div>
+          </div>
+      
+              <div class="relative w-full">
+               
+                <i class="fa-solid fa-grip-vertical text-gray-500 text-2xl absolute left-0 top-1/2 transform -translate-y-1/2 z-10 pointer-events-none"></i>
+                
+                <!-- Scrollable gallery images -->
+                <div class="gallery-images-container w-full overflow-x-auto whitespace-nowrap ml-6">
+                  <div class="gallery-images flex space-x-2 pl-2">
+                    <!-- existing images -->
+                    <img class="gallery-item w-32 h-32 object-cover rounded" src="./img/image 1.jpg" alt="Gallery Image 1" />
+                    <img class="gallery-item w-32 h-32 object-cover rounded" src="./img/image 2.jpg" alt="Gallery Image 2" />
+                    <img class="gallery-item w-32 h-32 object-cover rounded" src="./img/image 3.jpg" alt="Gallery Image 3" />
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+          <div class="capsule-line"></div>
+                <!-- Modal for Image Upload -->
+                <div id="image-modal" class="fixed inset-0 hidden items-center justify-center bg-gray-800 bg-opacity-75">
+                    <div class="bg-white p-6 rounded-lg">
+                      <h2 class="text-xl font-semibold mb-4">Upload Image</h2>
+                      <input type="file" id="image-upload" class="mb-4">
+                      <div class="flex justify-end">
+                        <button id="upload-btn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Upload</button>
+                        <button id="close-btn" class="ml-2 bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">Close</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
